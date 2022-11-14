@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Đảo ngược</title>
 </head>
 <body>
-$END$
+<script>
+let x =[ 1, 5,7,9,37];
+let firt = 0 ;
+let last = x.length -1;
+while (firt<last){
+     let atemp = x[firt];
+    x[firt] = x[last];
+    x[last] =atemp ;
+    firt ++;
+    last-- ;
+}
+document.write(x)
+</script>
 </body>
 </html>
