@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>di chuyển quả bóng</title>
+</head>
+<body>
+<img id="image" src="https://thuviendohoa.vn/upload/images/items/hinh-anh-qua-bong-vang-png-454.webp" style="width: 30%">
+<p>Clich button below to move the image to rigt and left</p>
+<button onclick="img" id="left">left</button>
+<button onclick="img" id="right">right</button>
+<script>
+    let img = null;
+    img =document.getElementById("image");
+    function init() {
+        img =document.getElementById("image");
+        image.style.position = "relative";
+        image.style.left
+
+    }
+    function moveRight(){
+        imgage.style.left =parseInt(image.style.left) +10 +"px"
+    }
+    window.onload =img
+
+</script>
+</body>
+</html>

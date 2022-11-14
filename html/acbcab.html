@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xét tam giác</title>
+</head>
+<body>
+<input id="a" placeholder="nhập a">
+<input id="b" placeholder="nhập b">
+<input id="c" placeholder="nhập c">
+<button onclick="result()" id="Tính">Click</button>
+
+<script>
+  function result() {
+      let a = +document.getElementById("a").value;
+      let b = +document.getElementById("b").value;
+      let c = +document.getElementById("c").value;
+      if (a + b > c && a + c > b && a + c > b) {
+          if (a === b && b=== c) {
+              alert("Đây là tam giác đều")
+          } else if (a === b || a === c || b === c) {
+              alert("Đây là tam giác cân")
+          } else if (a ** a === b * b + c * c || b * b === a * a + c * c || c * c === a * a + b * b) {
+              alert("Đây là tam giác vuông");
+          } else {
+              alert("Đây là tam giác")
+          }
+      }
+      else
+          {
+              alert("Đây không phải tam giác")
+          }
+      }
+
+
+</script>
+
+</body>
+</html>

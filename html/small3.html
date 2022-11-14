@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tổng các số cách nhau</title>
+</head>
+<body>
+<input id="a" placeholder="nhập a">
+<input id="b" placeholder="nhập b">
+<button onclick="ketqua()" id="Xác nhận">Xác nhận</button>
+
+  <script>
+    function ketqua(){
+      let a=Number(document.getElementById("a").value)
+   let b = Number(document.getElementById("b").value)
+      S=((a+b)*(b-a+1))/2
+document.write("tổng các số hạng từ a đến b là"+ S )
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập a và b</title>
+</head>
+<body>
+<p>Nhập a</p>
+<input id="a" placeholder="nhập a">
+<br>
+<p>nhập b</p>
+<input id="b" placeholder="nhập b">
+<br>
+<button onclick="ketqua()" id="Tính">Xác nhận</button>
+<script>
+function ketqua(){
+  let a=Number(document.getElementById("a").value)
+  let b=Number(document.getElementById("b").value)
+a *=a
+  S= a**b
+  document.write("a bình phương là:"+ a +"<br>" + "giá trị của a mũ b là" + S )
+}
+
+</script>
+
+</body>
+</html>

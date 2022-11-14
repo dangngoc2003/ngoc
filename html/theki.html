@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thế kỉ</title>
+  <input id="nam" placeholder="nhập số năm">
+  <button onclick="nam()"id="xacnhan">submit</button>
+</head>
+<body>
+<script>
+  function nam(){
+let nam =Number(document.getElementById("nam").value);
+if (nam%100==0) {
+  nam = nam / 100 ;
+
+  document.write("đây là thế kỉ" + nam);
+}else {
+  nam =Math.floor(nam /100) +1;
+  document.write("đây là thế kỉ là" + nam);
+}
+}
+
+</script>
+</body>
+</html>

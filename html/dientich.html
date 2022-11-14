@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính diện tích</title>
+</head>
+<body>
+<p>Nhập</p>
+ <input type="text" id="a">
+ <br>
+<br>
+ <button onclick="ketqua()" id="Tính">Xác nhận</button>
+
+    <script>
+        function ketqua() {
+            let a = Number(document.getElementById("a").value)
+
+            S=a**2
+            p=a*4
+            document.write("<h4> diện tích hình vuông là :" +S +"</h4>" +"<br>"+"<h4> chu vi hình vuông là" + p + "</h4>")}
+
+</script>
+</body>
+</html>

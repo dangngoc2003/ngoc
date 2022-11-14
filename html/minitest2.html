@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>tích của 2 số</title>
+</head>
+<body>
+<p>giá trị của a</p>
+<input type="text" id="a">
+<br>
+<P>giá trị của b</P>
+<input type="text" id="b">
+<br>
+<button onclick="S()"  id="xác nhận">submid</button>
+<script>
+function S(){
+    let a =Number(document.getElementById("a").value)
+    let b =Number(document.getElementById("b").value)
+    let S
+S=a*b
+    document.write("<h1>giá trị của S là:" +S+"</h1>")
+}
+
+</script>
+</body>
+</html>
